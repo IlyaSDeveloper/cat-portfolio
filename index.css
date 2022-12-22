@@ -1,0 +1,227 @@
+*::selection {
+    background: wheat;
+    background-color: wheat;
+    color: #000;
+}*:focus::selection {
+    background: wheat;
+    background-color: wheat;
+    color: #000
+}
+*::-moz-selection {
+    background: wheat;
+    background-color: wheat;
+    color: #000
+}
+*:focus::-moz-selection {
+    background: wheat;
+    background-color: wheat;
+    color: #000
+}
+body {
+    background-color: #f1f1f1;
+    font-family: "Open Sans";
+}
+section {
+    padding: 25px;
+}
+.person {
+    background-color: #3f313f;
+    width: 100%;
+    padding: 1% 6%;
+}
+.person-content {
+    display: flex;
+    align-items: center;
+    color: wheat;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.person-avatar img{
+	max-width: 170px;
+    width: 100%;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+.experience-block {
+    display: flex;
+    margin: 5% 0;
+    border-bottom: 1px solid lightgray;
+}
+.experience-year {
+    min-width: 100px;
+}
+.experience-info {
+    margin: 0 10%;
+}
+.experience-info-title {
+    font-weight: 600;
+}
+.person-info {
+    margin: 0 7%;
+}
+.language ul {
+    list-style: none;
+    padding: 0;
+}
+.language ul li::before{
+    display: inline-block;
+    width: 15px; 
+    content:"\25A0"; 
+    color:#b9a49e;
+    font-weight: bold; 
+}
+.submit-form {
+    background-color: #e5d6d2;
+}
+.submit-form h2 {
+    text-align: center;   
+}
+.main-form-wrapper {
+    display: flex;
+    max-width: 430px;
+    margin: 5% auto;
+    flex-direction: column;
+}
+.main-form-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-form-item {
+    position: relative;
+    margin: 5% 2%;
+}
+.main-form-item input,
+.main-form-message textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bba205;
+    background: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.main-form-item input:focus,
+.main-form-message textarea:focus {
+    border-color: #5a5959;
+}
+.main-form-item input[type="email"]::placeholder {
+    color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.main-form-item input:focus+label,
+.main-form-item input:valid+label,
+.main-form-item input[type="email"]:not(:placeholder-shown)+label,
+.main-form-message textarea:focus+label,
+.main-form-message textarea:valid+label {
+    transform: translateY(-60px);
+    margin-left: -14px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: 0;
+    border-color: #5a5959;
+    color: #5a5959;
+}
+.main-form-item label,
+.main-form-message label {
+    position: absolute;
+    left: 13px;
+    top: 30px;
+    color: #9d959d;
+    font-size: 16px;
+    font-weight: 300;
+    transform: translateY(-35px);
+    transition: all 0.2s ease;
+}
+.main-form-message label {
+    top: 35px;
+}
+.main-form-message {
+    display: flex;
+    margin: 5% 2%;
+    justify-content: center;
+    position: relative;
+}
+.main-form-message textarea {
+    min-height: 33px;
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #bba205;
+}
+.main-form-submit-btn {
+    color: white;
+    background-color: burlywood;
+    border: 1px solid #000;
+    padding: 5px; 
+    max-width: 200px;
+    min-width: 100px;
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.main-form-submit-btn:hover {
+    color: #5a5a5a; 
+    background-color: #f5deb375;
+}
+.contacts {
+    background-color: #3f313f;
+    color: wheat;
+}
+.contacts a {
+    color: wheat;
+    padding: 0 5px;
+    transition: 0.5s all ease-in-out;
+}
+.contacts a:hover {
+    color: burlywood;
+}
+.contacts ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 3%;
+}
+.contacts ol li {
+    display: inline-flex;
+}
+.contacts h2 {
+    text-align: center;
+}
+.copyright {
+    display: flex;
+    background-color: #3f313f;
+    justify-content: center;
+    padding: 15px;
+    color: #f5deb35c;
+}
+.copyright::before {
+    content: "\00A9";
+    margin-right: 5px;
+    font-size: 16px;
+}
+@media (max-width: 530px) {
+    .main-form-item {
+        width: 100%;;
+    }
+    .person-content {
+        justify-content: center;
+    }
+}
